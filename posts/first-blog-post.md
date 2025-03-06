@@ -1,8 +1,7 @@
 ---
 title: New Blog Post
 published_at: 2025-03-06
-snippet: 이창조 바보래요
-snippet: 진짜진짜 바보래요
+snippet: what the
 disable_html_sanitization: true
 allow_math: true
 ---
