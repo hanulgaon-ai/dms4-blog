@@ -1,7 +1,7 @@
 ---
 title: New Blog Post
 published_at: 2025-03-06
-snippet: what the
+snippet: nooooooooooooooooooooooooooooo wayyyyyyyyyyyyyyyyyyyyyyyyyy
 disable_html_sanitization: true
 allow_math: true
 ---
