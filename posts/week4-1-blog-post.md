@@ -1,6 +1,6 @@
 ---
 title: Week 4-2 Blog
-published_at: 2025-05-09
+published_at: 2025-04-02
 snippet: Exploring glitch aesthetics through digital self-portraiture
 disable_html_sanitization: true
 allow_math: true
