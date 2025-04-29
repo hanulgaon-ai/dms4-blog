@@ -30,8 +30,8 @@ function draw() {
   background(240);
 
   // Set up the styling for our grid lines
-  strokeWeight(1);  // Make lines 1 pixel thick
-  stroke(0);        // Set line color to black
+  strokeWeight(1); // Make lines 1 pixel thick
+  stroke(0); // Set line color to black
 
   // Define how far apart the grid lines should be (20 pixels)
   let spacing = 20;
@@ -50,7 +50,7 @@ function draw() {
     line(0, y, width, y);
   }
 }
-````
+```
 
 ### 2) Low Compressibility
 
@@ -219,3 +219,4 @@ Mohr's work follows clear geometric rules while leaving room for viewers to form
 ```
 
 ```
+````
