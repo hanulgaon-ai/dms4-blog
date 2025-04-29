@@ -1,4 +1,3 @@
-````
 ---
 title: Week 4-1 Blog
 published_at: 2025-03-29
@@ -219,4 +218,7 @@ Mohr's work follows clear geometric rules while leaving room for viewers to form
 ```
 
 ```
-````
+
+```
+
+```
