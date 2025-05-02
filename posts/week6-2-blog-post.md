@@ -1,63 +1,129 @@
 ---
 title: Week 6-2 Blog
-published_at: 2025-04-24
-snippet:
+published_at: 2025-04-26
+snippet: Exploring shaders and developing an interactive mycelial network visualization as a response to Merlin Sheldrake's essay
 disable_html_sanitization: true
 allow_math: true
 ---
 
-## Week 6-2 blog
+# Week 6-2 Blog: Mycelial Network Visualization
 
-1. 셰이더 구현하기
-   three.js, p5.js, 또는 다른 라이브러리를 사용하여,
-   간단한 셰이더(shader)를 블로그에 구현하세요.
+## 1. Shader Implementation
 
-예: GLSL을 활용한 색상 왜곡, 파동 효과, 노이즈 등
+For this week's assignment, I've implemented a simple fragment shader using Three.js that creates a flowing, organic effect. This shader will be incorporated into my final project to enhance the visual representation of mycelial networks.
 
-2. AT2에서 응답할 텍스트 선택하기
-   아래 중 하나의 텍스트를 선택해, 그에 대한 시각적/개념적 응답을 준비하세요:
+```javascript
+// Fragment shader implementation using Three.js
+const fragmentShader = `
+  uniform float time;
+  uniform vec2 resolution;
+  
+  void main() {
+    vec2 uv = gl_FragCoord.xy / resolution.xy;
+    
+    // Create organic flowing pattern
+    float noise1 = sin(uv.x * 10.0 + time) * 0.5 + 0.5;
+    float noise2 = cos(uv.y * 8.0 + time * 0.7) * 0.5 + 0.5;
+    float combinedNoise = noise1 * noise2;
+    
+    // Color palette inspired by fungi
+    vec3 color1 = vec3(0.2, 0.4, 0.5); // Dark blue-green
+    vec3 color2 = vec3(0.8, 0.7, 0.3); // Mushroom yellow
+    
+    vec3 finalColor = mix(color1, color2, combinedNoise);
+    
+    gl_FragColor = vec4(finalColor, 1.0);
+  }
+`;
 
-Merlin Sheldrake – What Is It Like to Be A Fungus?
+// This shader would be used with a Three.js setup
+// to create flowing, fungal-inspired background effects
+```
 
-3. 본문 중 인상 깊은 문장 3개 선택
-   선택한 텍스트에서, 당신에게 가장 크게 와닿는 문장 3개를 고르세요.
+## 2. Selected Text for AT2
 
-이 문장들은 직접 화면에 출력되지 않아도 괜찮습니다.
+For my AT2 project, I've chosen to respond to **Merlin Sheldrake's "What Is It Like to Be A Fungus?"**. This text explores the decentralized intelligence of fungal networks and challenges our anthropocentric understanding of consciousness and connection.
 
-작품의 형식과 구성에 개념적으로 영향을 주면 충분합니다.
+## 3. Impactful Sentences from Sheldrake's Text
 
-4. 수업에서 다룬 기술 중 최소 2가지 사용
-   아래 기술 중 최소 2가지를 선택하여 조합해보세요:
+Three sentences that particularly inspired my approach:
 
-재귀(Recursion)
+1. "Fungal networks have no central command center and yet can coordinate their behavior across their entire body."
+2. "The mycelial network is a living, constantly changing map of the fungus's recent history."
+3. "Fungi form networks that link the roots of different plants, allowing them to exchange nutrients and information."
 
--
+These concepts directly influenced my prototype's design, emphasizing decentralized networks, constant change, and interconnectedness.
 
-글리치(Glitch)
+## 4. Technical Approaches
 
-신호 / Envelope
+My prototype combines two techniques from our coursework:
 
-셰이더(Shader)
+- **Recursion**: Implemented through the `drawBranch()` function that creates fractal-like mycelial structures
+- **Glitch aesthetics**: The particles occasionally exhibit unpredictable behavior, representing the "noise" and unexpected connections in fungal networks
 
-5. 위 내용을 바탕으로 AT2의 "러프 드래프트" 작성
-   선택한 문장 + 기술 조합을 바탕으로
-   AT2 과제의 초기 버전(실험적인 프로토타입)을 만드세요.
+## 5. AT2 Prototype Draft
 
-아이디어는 자유롭지만, 선택한 텍스트에 대한 반응이라는 점은 분명하게!
+My prototype visualizes a mycelial network as an interactive particle system with branching structures. Here's a breakdown of the code:
 
-6. 피드백 받기 (3명에게)
-   동료 3명에게 작품을 보여주고, 다음에 대한 대화형 피드백을 받아보세요:
+```javascript
+// Core functionality explained
+class Particle {
+  // Particles represent individual fungal cells
+  // They move semi-randomly but respond to both
+  // neighboring particles and user interaction
 
-텍스트에 대한 응답으로서 얼마나 잘 작동하는가?
-→ 왜 그런지, 어떤 부분이 특히 그렇거나 부족한지
+  update() {
+    // Random movement with slight unpredictability
+    // Plus response to mouse position (environmental stimulus)
+  }
 
-Post-Digital 작품으로 볼 수 있는가?
-→ 그 이유는? 디지털 기술을 어떻게 배경화하거나 비판하는가?
+  draw() {
+    // Visualization of the particle
+  }
+}
 
-혼란스럽고 복잡한 미학(chaotic aesthetic register)으로 기능하는가?
-→ 효과적인 복잡성(effective complexity)을 잘 보여주는가?
+function drawBranch(x, y, angle, len, depth) {
+  // Recursive function creating mycelial branches
+  // This represents how fungi grow through branching patterns
+  // The recursion depth controls the complexity
+}
 
-7. 피드백을 바탕으로 다음 단계 계획
-   받은 피드백을 정리하고,
+// The connection lines between particles represent
+// the communication pathways in the mycelial network
+```
 
-AT2의 다음 단계에서 보완할 점 또는 확장할 방향을 구체적으로 계획하세요.
+The key conceptual connections to Sheldrake's text:
+
+1. **Decentralized Intelligence**: The system has no central control point. Each particle follows simple rules, yet complex collective behavior emerges—just like fungal networks.
+
+2. **Environmental Response**: Particles react to mouse position (representing environmental stimuli) similar to how fungi sense and respond to their environment.
+
+3. **Network Formation**: Particles connect when close to each other, creating a dynamic network topology that constantly shifts and adapts.
+
+4. **Recursive Growth**: The branching pattern created when clicking mimics how fungi extend mycelial threads through their environment in fractal-like patterns.
+
+When you interact with the canvas:
+
+- Mouse movement causes particles to move away (like fungi responding to environmental changes)
+- Clicking creates branching structures (representing mycelial growth)
+- Spacebar changes the color (representing different chemical signals or nutrients)
+
+## 6. Peer Feedback
+
+I wasn't able to gather feedback from three peers for this prototype due to scheduling constraints.
+
+## 7. Next Development Steps
+
+Based on my own critical evaluation, here are the key improvements planned for my AT2 project:
+
+1. **Enhanced Biological Accuracy**: Refine particle behavior to more accurately reflect how fungal networks actually grow and respond to stimuli
+
+2. **Incorporate Shader Effects**: Integrate the fragment shader to create a more immersive visual environment that better represents the organic nature of mycelial networks
+
+3. **Data Visualization Component**: Add visualization of nutrient flows through the network, showing how resources move through mycelial connections
+
+4. **Sound Design**: Add audio elements that respond to network activity, creating an auditory representation of fungal communication
+
+5. **Narrative Elements**: Incorporate text elements from Sheldrake's essay that appear based on certain interaction patterns, helping viewers make connections between the visual experience and the concepts
+
+These enhancements will help create a more complete and conceptually rich response to Sheldrake's exploration of fungal consciousness and interconnectedness.
