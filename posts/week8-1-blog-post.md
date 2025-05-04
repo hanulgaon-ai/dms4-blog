@@ -10,8 +10,6 @@ allow_math: true
 
 ## 1. Blog Upgrade Process
 
-![Clone Repository Error](week8-1-001.png)
-
 While attempting to upgrade my blog, I encountered an error when trying to clone the landing page repository. The error message "This folder contains files. Git can only clone to empty folders" appeared. I'll need to create an empty folder first and then try again.
 
 ## 2. Five Communities of Practice I Belong To
