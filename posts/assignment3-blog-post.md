@@ -1,7 +1,7 @@
 ---
-title: CheckMate! Communities of (Mycelial) Practice
+title: "CheckMate: Communities of (Mycelial) Practice"
 published_at: 2025-06-05
-snippet: Fair roommate living through technology-mediated community practice
+snippet: "Fair roommate living through technology-mediated community practice"
 disable_html_sanitization: true
 allow_math: true
 ---
