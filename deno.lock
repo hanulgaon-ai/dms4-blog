@@ -175,6 +175,7 @@
   },
   "redirects": {
     "https://esm.sh/@types/babel__helper-validator-identifier@~7.15.2/index.d.ts": "https://esm.sh/@types/babel__helper-validator-identifier@7.15.2/index.d.ts",
+    "https://esm.sh/@types/sax@~1.2.7/index.d.ts": "https://esm.sh/@types/sax@1.2.7/index.d.ts",
     "https://esm.sh/sax@^1.2.4?target=denonext": "https://esm.sh/sax@1.4.1?target=denonext",
     "https://esm.sh/style-vendorizer@^2.0.0?target=denonext": "https://esm.sh/style-vendorizer@2.2.3?target=denonext",
     "https://esm.sh/xml-js@^1.6.11?target=denonext": "https://esm.sh/xml-js@1.6.11?target=denonext"
@@ -267,6 +268,7 @@
     "https://deno.land/std@0.160.0/encoding/yaml.ts": "4c02197eb797e40dfe0720fbe32a9990c935f02cf75b6091b36c0710c3218cf6",
     "https://deno.land/std@0.160.0/io/buffer.ts": "fae02290f52301c4e0188670e730cd902f9307fb732d79c4aa14ebdc82497289",
     "https://deno.land/std@0.160.0/path/_constants.ts": "df1db3ffa6dd6d1252cc9617e5d72165cd2483df90e93833e13580687b6083c3",
+    "https://deno.land/std@0.160.0/path/_interface.ts": "ee3b431a336b80cf445441109d089b70d87d5e248f4f90ff906820889ecf8d09",
     "https://deno.land/std@0.160.0/path/_util.ts": "d16be2a16e1204b65f9d0dfc54a9bc472cafe5f4a190b3c8471ec2016ccd1677",
     "https://deno.land/std@0.160.0/path/posix.ts": "6b63de7097e68c8663c84ccedc0fd977656eb134432d818ecd3a4e122638ac24",
     "https://deno.land/std@0.208.0/assert/assert.ts": "9a97dad6d98c238938e7540736b826440ad8c1c1e54430ca4c4e623e585607ee",
