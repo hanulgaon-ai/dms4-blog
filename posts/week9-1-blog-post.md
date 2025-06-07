@@ -1,7 +1,7 @@
 ---
-title: Week 9-1 Blog
+title: "Week 9-1 Blog"
 published_at: 2025-05-18
-snippet: Local LLM brainstorming for AT3 and Processing GIF creation
+snippet: "Local LLM brainstorming for AT3 and Processing GIF creation"
 disable_html_sanitization: true
 allow_math: true
 ---

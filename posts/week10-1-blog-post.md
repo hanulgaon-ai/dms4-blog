@@ -1,7 +1,7 @@
 ---
-title: Week 10-1 Blog
+title: "Week 10-1 Blog"
 published_at: 2025-06-01
-snippet: WebRTC integration for CheckMate and mycelial creativity
+snippet: "WebRTC integration for CheckMate and mycelial creativity"
 disable_html_sanitization: true
 allow_math: true
 ---

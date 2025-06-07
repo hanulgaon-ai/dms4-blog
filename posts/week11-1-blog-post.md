@@ -1,7 +1,7 @@
 ---
-title: Week 11-1 Blog
+title: "Week 11-1 Blog"
 published_at: 2025-06-03
-snippet: AT3 plan documentation with screen recording and haiku narration
+snippet: "AT3 plan documentation with screen recording and haiku narration"
 disable_html_sanitization: true
 allow_math: true
 ---

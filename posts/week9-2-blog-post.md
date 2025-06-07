@@ -1,7 +1,7 @@
 ---
-title: Week 9-2 Blog
+title: "Week 9-2 Blog"
 published_at: 2025-05-25
-snippet: Learning TouchDesigner for visual programming and creative coding
+snippet: "Learning TouchDesigner for visual programming and creative coding"
 disable_html_sanitization: true
 allow_math: true
 ---

@@ -1,7 +1,7 @@
 ---
-title: Week 8-2 Blog
+title: "Week 8-2 Blog"
 published_at: 2025-05-11
-snippet: Live coding performance with flok.cc and exploring the live coding community
+snippet: "Live coding performance with flok.cc and exploring the live coding community"
 disable_html_sanitization: true
 allow_math: true
 ---

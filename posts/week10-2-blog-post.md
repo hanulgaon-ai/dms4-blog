@@ -1,7 +1,7 @@
 ---
-title: Week 10-2 Blog
+title: "Week 10-2 Blog"
 published_at: 2025-06-02
-snippet: Learning Manim for mathematical animation and creative coding
+snippet: "Learning Manim for mathematical animation and creative coding"
 disable_html_sanitization: true
 allow_math: true
 ---

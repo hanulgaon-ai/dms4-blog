@@ -1,7 +1,7 @@
 ---
-title: Week 11-2 Blog
+title: "Week 11-2 Blog"
 published_at: 2025-06-04
-snippet: AT3 progress update through Communities of Practice and Mycelial Creativity lens
+snippet: "AT3 progress update through Communities of Practice and Mycelial Creativity lens"
 disable_html_sanitization: true
 allow_math: true
 ---
