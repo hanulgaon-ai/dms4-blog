@@ -1,6 +1,6 @@
 ---
 title: "Week 12-1 Blog"
-published_at: 2025-06-04
+published_at: 2025-06-05
 snippet: "Inclusion as a structural pillar of creative coding: infrastructure, access, and power"
 disable_html_sanitization: true
 allow_math: true

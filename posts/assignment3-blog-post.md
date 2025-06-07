@@ -1,6 +1,6 @@
 ---
 title: "CheckMate: Communities of (Mycelial) Practice"
-published_at: 2025-06-05
+published_at: 2025-06-06
 snippet: "Fair roommate living through technology-mediated community practice"
 disable_html_sanitization: true
 allow_math: true
